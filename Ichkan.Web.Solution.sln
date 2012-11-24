@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ichkan.Web.UI", "Ichkan.Web.UI\Ichkan.Web.UI.csproj", "{6817EAC9-83D4-4F43-825F-55C1C922ABBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ichkan.Web.Data", "Ichkan.Web.Data\Ichkan.Web.Data.csproj", "{D07B4390-8526-4446-977F-FFCE500AACEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6817EAC9-83D4-4F43-825F-55C1C922ABBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6817EAC9-83D4-4F43-825F-55C1C922ABBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6817EAC9-83D4-4F43-825F-55C1C922ABBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6817EAC9-83D4-4F43-825F-55C1C922ABBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07B4390-8526-4446-977F-FFCE500AACEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07B4390-8526-4446-977F-FFCE500AACEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07B4390-8526-4446-977F-FFCE500AACEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07B4390-8526-4446-977F-FFCE500AACEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

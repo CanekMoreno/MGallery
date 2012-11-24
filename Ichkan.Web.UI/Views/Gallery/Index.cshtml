@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Ichkan.Web.Data.Models.IMA_IMAGES>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Descripcion</th>
+                <th>Archivo</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        { 
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IMA_TITTLE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IMA_DESC)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IMA_NAME)
+                </td>
+            </tr>
+        
+        }
+            
+
+
+        </tbody>
+    </table>
+
+
+     <!-- Carousel
+    ================================================== -->
+    <section id="carousel">
+
+      <div class="row">
+       
+        <div class="span9 columns">
+            
+
+          <div id="myCarousel" class="carousel slide" >
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://ichkan.com/galeria/filescontainer/IK201205101107270.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>First Thumbnail label</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://ichkan.com/galeria/filescontainer/IK201205091632020.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Second Thumbnail label</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://ichkan.com/galeria/filescontainer/IK201205091659380.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Third Thumbnail label</h4>
+                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+
+

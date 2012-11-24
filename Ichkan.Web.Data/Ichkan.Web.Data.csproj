@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D07B4390-8526-4446-977F-FFCE500AACEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ichkan.Web.Data</RootNamespace>
+    <AssemblyName>Ichkan.Web.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.3.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ART_ARTICLES.cs" />
+    <Compile Include="Models\AUT_AUTHORS.cs" />
+    <Compile Include="Models\CAT_CATEGORY.cs" />
+    <Compile Include="Models\COM_COMMENTS.cs" />
+    <Compile Include="Models\CON_CONTRACTS.cs" />
+    <Compile Include="Context\IchkanDBContext.cs" />
+    <Compile Include="Models\IMA_IMAGES.cs" />
+    <Compile Include="Models\Mapping\ART_ARTICLESMap.cs" />
+    <Compile Include="Models\Mapping\AUT_AUTHORSMap.cs" />
+    <Compile Include="Models\Mapping\CAT_CATEGORYMap.cs" />
+    <Compile Include="Models\Mapping\COM_COMMENTSMap.cs" />
+    <Compile Include="Models\Mapping\CON_CONTRACTSMap.cs" />
+    <Compile Include="Models\Mapping\IMA_IMAGESMap.cs" />
+    <Compile Include="Models\Mapping\MIT_MENU_ITEMSMap.cs" />
+    <Compile Include="Models\Mapping\OBJ_OBJECTSMap.cs" />
+    <Compile Include="Models\Mapping\POR_PORTFOLIOMap.cs" />
+    <Compile Include="Models\Mapping\STA_STATEMap.cs" />
+    <Compile Include="Models\Mapping\TYP_TYPESMap.cs" />
+    <Compile Include="Models\Mapping\USR_USERSMap.cs" />
+    <Compile Include="Models\MIT_MENU_ITEMS.cs" />
+    <Compile Include="Models\OBJ_OBJECTS.cs" />
+    <Compile Include="Models\POR_PORTFOLIO.cs" />
+    <Compile Include="Models\STA_STATE.cs" />
+    <Compile Include="Models\TYP_TYPES.cs" />
+    <Compile Include="Models\USR_USERS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Context.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Entity.tt" />
+    <None Include="CodeTemplates\ReverseEngineerCodeFirst\Mapping.tt" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
