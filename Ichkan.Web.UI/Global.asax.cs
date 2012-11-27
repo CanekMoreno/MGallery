@@ -32,7 +32,9 @@ namespace Ichkan.Web.UI
                 new { Controller = "Home",action="Index",id = UrlParameter.Optional }
                 );
         }
-        
+       /// <summary>
+       /// Test
+       /// </summary>
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
